@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  sample:
+    image: gRPC Typescript Starter
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    environment:
+      NODE_ENV: development
+    ports:
+      - 3000:3000
+    volumes:
+      - /usr/src/app/node_modules
+    command: [ "node", "--inspect=0.0.0.0:9229", "./bin/www" ]
