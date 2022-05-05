@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "node dist/server.js",
-    "gen:proto": "./proto-gen.sh",
+    "gen:proto": "yarn proto-loader-gen-types --grpcLib=@grpc/grpc-js --outDir=src/controller/ src/protos/*.proto",
     "dev": "nodemon",
     "build": "rimraf ./build && tsc -p .",
     "debug": "GRPC_VERBOSITY=DEBUG GRPC_TRACE=all nodemon"
