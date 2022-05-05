@@ -1,0 +1,23 @@
+/*
+============================================================================================
+Please go through the following proto types and functions carefully before you use them.
+Thank You --- @silicon-ninja
+============================================================================================
+*/
+
+syntax = "proto3";
+
+package HelloServicePackage;
+
+service HelloWorldService {
+    rpc ServiceHelloWorld(RequestHelloWorld) returns (ResponseHelloWorld) {}
+}
+
+message RequestHelloWorld{
+    string name = 1;
+}
+
+message ResponseHelloWorld{
+    string message = 1;
+}
+
