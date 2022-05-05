@@ -18,6 +18,6 @@ message RequestHelloWorld{
 }
 
 message ResponseHelloWorld{
-    string message = 1;
+    string name = 1;
 }
 

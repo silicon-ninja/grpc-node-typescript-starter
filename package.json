@@ -6,7 +6,8 @@
     "start": "node dist/server.js",
     "gen:proto": "./proto-gen.sh",
     "dev": "nodemon",
-    "build": "rimraf ./build && tsc -p ."
+    "build": "rimraf ./build && tsc -p .",
+    "debug": "GRPC_VERBOSITY=DEBUG GRPC_TRACE=all nodemon"
   },
   "author": "",
   "license": "ISC",

@@ -2,9 +2,9 @@
 
 
 export interface ResponseHelloWorld {
-  'message'?: (string);
+  'name'?: (string);
 }
 
 export interface ResponseHelloWorld__Output {
-  'message'?: (string);
+  'name'?: (string);
 }
