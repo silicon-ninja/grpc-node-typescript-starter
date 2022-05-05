@@ -21,10 +21,9 @@ function main(){
           console.log("---------------------------------------------------------------------------------------------");
           console.log("");
           logger.debug("Made by @silicon-ninja")
-          logger.info(`grpc-starter-service is running at http://localhost:${GRPC_PORT} in ${ENVIRONMENT} mode.`);
+          logger.info(`grpc-starter-service is running at grpc://localhost:${GRPC_PORT} in ${ENVIRONMENT} mode.`);
           if (process.env.NODE_ENV !== "production") {
               logger.debug("Logging initialized at debug level");
-              console.log("");
           }
         }
       });
